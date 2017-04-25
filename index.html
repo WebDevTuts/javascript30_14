@@ -90,8 +90,13 @@
     dev.name = 'Tyler';
     // console.log(dev);
     // console.log(edwin);
-    dev.social.twitter = '@coolman';
-    console.log(dev.social);
+    // dev.social.twitter = '@coolman';
+    // console.log(dev.social);
+    // console.log(edwin.social);
+    // Either using Lodash cloneDeep method or below method
+    const dev2 = JSON.parse(JSON.stringify(edwin));
+    dev2.social.twitter = '@coolman';
+    console.log(dev2.social);
     console.log(edwin.social);
 
   </script>
